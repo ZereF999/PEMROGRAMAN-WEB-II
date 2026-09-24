@@ -5,7 +5,7 @@
 <body>
 Hari ini :
 <?php
-    $nama_hari = date("l"); // ambil nama hari dalam bahasa Inggris
+    $nama_hari = date("l");
 
     switch ($nama_hari) {
         case "Sunday":
