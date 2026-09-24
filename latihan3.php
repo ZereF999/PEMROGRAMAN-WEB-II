@@ -1,25 +1,12 @@
 <?php
-// Latihan 3 - Switch Case
-$destination = "Tokyo"; // coba ganti nilainya, misal "Egypt" atau "Amsterdam"
+// Latihan 3 - foreach dengan key => value pada array asosiatif
+$UsiaKaryawan["Lisa"]   = "28";
+$UsiaKaryawan["Jack"]   = "16";
+$UsiaKaryawan["Ryan"]   = "35";
+$UsiaKaryawan["Rachel"] = "46";
+$UsiaKaryawan["Grace"]  = "34";
 
-switch ($destination) {
-    case "Las Vegas":
-        echo "Bring an extra \$500"; // pakai \$ agar $500 tidak dibaca sebagai variabel
-        break;
-    case "Amsterdam":
-        echo "Bring an open mind";
-        break;
-    case "Egypt":
-        echo "Bring 15 bottles of SPF 50 Sunscreen";
-        break;
-    case "Tokyo":
-        echo "Bring lots of money";
-        break;
-    case "Caribbean Islands":
-        echo "Bring a swimsuit";
-        break;
-    default:
-        echo "Enjoy your trip!";
-        break;
+foreach ($UsiaKaryawan as $Nama => $umur) {
+    echo "Nama Karyawan: $Nama, Usia: $umur" . " th <br>";
 }
 ?>
